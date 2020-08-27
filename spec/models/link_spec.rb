@@ -25,9 +25,9 @@ RSpec.describe Link, type: :model do
     link_1.save
 
     link_2 = Link.new(
-      url: "https://www.alongurlwebsite.com/articles/how-to-code-in-ruby"
+      url: "https://www.alongurlwebsite.com/articles/how-to-code-in-ruby",
+      slug: "ABC123"
     )
-    link_2.save
     expect(link_2.valid?).to be(true)
   end
 end
