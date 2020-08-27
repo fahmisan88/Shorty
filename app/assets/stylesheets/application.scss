@@ -48,7 +48,10 @@ a {
 .btn-block {
   display: block;
   white-space: normal;
-  width: 100%;
+}
+
+input.btn-block[type="submit"] {
+  width: 50%;
 }
 
 .btn {
@@ -61,7 +64,7 @@ a {
 // FORMS
 .form-control {
   border-radius: 2px;
-  height: 4rem;
+  height: 3rem;
 }
 
 // FLASH MESSAGE
@@ -74,4 +77,13 @@ a {
 .banner {
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+.thumb {
+  text-align: center;
+}
+
+.result {
+  text-align: center;
+  color: red;
 }

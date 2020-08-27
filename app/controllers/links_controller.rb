@@ -13,7 +13,7 @@ class LinksController < ApplicationController
     @link = Link.new(link_params)
 
     if @link.save
-      flash[:notice] = 'Shorten Success!!'
+      # flash[:notice] = 'Shorten Success!!'
       respond_to :js
     else
       flash[:alert] = @link.errors.full_messages.join(". ")
