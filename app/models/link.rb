@@ -10,7 +10,7 @@ class Link < ApplicationRecord
   end
 
   def shortened_url
-    "http://localhost:3000/#{slug}"
+    "http://#{ENV['SHORTY_HOST']}/#{slug}"
   end
 
   private
