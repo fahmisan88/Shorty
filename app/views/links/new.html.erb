@@ -4,17 +4,17 @@
   </div>
 </div>
 
-<%= form_for @link do |f| %>
+<%= form_for @link, remote: true do |f| %>
   <div class="row">
     <div class="col-md-6">
-      <%= f.text_field :url, class: "form-control" %>
+      <%= f.text_field :url, class: "form-control", required: true %>
     </div>
   </div>
   <br/><br/>
 
   <div class="row">
     <div class="col-md-offset-4 col-md-4">
-      <%= f.submit "Submit", class: "btn btn-primary btn-block", id: 'submit' %>
+      <%= f.submit "Shorten", class: "btn btn-primary btn-block", id: 'submit' %>
     </div>
   </div>
 <% end %>

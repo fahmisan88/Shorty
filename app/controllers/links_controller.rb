@@ -13,10 +13,11 @@ class LinksController < ApplicationController
     @link = Link.new(link_params)
 
     if @link.save
-      redirect_to root_path, notice: 'Shorten Successfully!'
+      flash[:notice] = 'Shorten Success!!'
+      respond_to :js
     else
-      flash[:alert] = 'Something went wrong...'
-      render :new
+      flash[:alert] = @link.errors.full_messages.join(". ")
+      redirect_to root_path
     end
   end
 
