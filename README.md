@@ -1,24 +1,22 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a URL shortener app built with Rails 6. Built with TDD (not all :-D)
 
-Things you may want to cover:
+Prerequisites:
 
-* Ruby version
+* Ruby 2.6.6
+* Rails 6.0.3.2
+* Postgresql
 
-* System dependencies
+1. Git clone this repo and bundle install
 
-* Configuration
+2. Create and setup database
+  `bundle exec rake db:create` and `bundle exec rake db:migrate`
 
-* Database creation
+3. To run test suite just type in `rspec`
 
-* Database initialization
+4. Start the server by type in `bundle exec rails s`
 
-* How to run the test suite
+5. Visit site at http://localhost:3000 in browser
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
-
-* ...
