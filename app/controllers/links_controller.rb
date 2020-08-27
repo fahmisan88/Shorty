@@ -11,6 +11,13 @@ class LinksController < ApplicationController
 
   def create
     @link = Link.new(link_params)
+
+    if @link.save
+      redirect_to root_path, notice: 'Shorten Successfully!'
+    else
+      flash[:alert] = 'Something went wrong...'
+      render :new
+    end
   end
 
   private
