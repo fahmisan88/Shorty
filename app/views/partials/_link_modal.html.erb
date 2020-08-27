@@ -15,7 +15,12 @@
             </div>
             <br><br>
             <h5 style="text-align: center">Here is your shortened url.</h5>
-            <p class="result"><%= link %></p>
+            <div class="input-group">
+              <input class="result" id="shortened" value="<%= link %>">
+              <span class="input-group-button">
+                <button class="btn" data-clipboard-target="#shortened"><img style="width: 5%" src="<%= image_path "clippy.png"%>" alt="Copy to clipboard"></button>
+              </span>
+            </div>
           </div>
         </div>
       </div>
@@ -27,4 +32,6 @@
   $('#short-modal').on('hidden.bs.modal', function () {
     location.reload();
   })
+
+  var clipboard = new ClipboardJS('.btn');
 </script>

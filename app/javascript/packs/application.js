@@ -8,6 +8,7 @@ require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
+global.ClipboardJS = require("clipboard")
 global.toastr = require("toastr")
 window.jQuery = $
 window.$ = $
