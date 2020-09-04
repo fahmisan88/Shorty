@@ -1,6 +1,8 @@
 # README
 
-This is a URL shortener app built with Rails 6. Built with TDD (not all :-D)
+This is a URL shortener app built with Rails 6. Built with TDD (not all :-D).
+
+To see it in action, visit: http://shoti.herokuapp.com/ (Please make to insert the right URL format with Http/Https)
 
 Prerequisites:
 
